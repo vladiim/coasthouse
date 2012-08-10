@@ -1,0 +1,10 @@
+.container
+  .row
+
+    %section#body_content.span8
+      = raw @page.content_for :body
+
+      = link_to "DO SOMETHING!", "#", class: 'btn btn-primary'
+
+    %section#sid_body_content.span4
+      = raw @page.content_for :side_body
